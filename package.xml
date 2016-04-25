@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+    <name>Medvslav_Pdfivoice</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/mit-license.php">Massachusetts Institute of Technology License (MITL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Extension for adding words of thanks to the buyer for purchasing in the invoice PDF</summary>
+    <description>Extension for adding words of thanks to the buyer for purchasing in the invoice PDF.&#xD;
+&#xD;
+When you install this extension in the administrative part of the Magento will create a new static CMS block - "Block for invoice PDF".&#xD;
+&#xD;
+The identifier of this block will be - "block_invoice_pdf".&#xD;
+&#xD;
+This block will contain the phrase: "Thank you for buying from us".&#xD;
+&#xD;
+After installing this extension, this phrase appears in all the invoice PDFs.</description>
+    <notes>Extension for adding words of thanks to the buyer for purchasing in the invoice PDF.&#xD;
+&#xD;
+When you install this extension in the administrative part of the Magento will create a new static CMS block - "Block for invoice PDF".&#xD;
+&#xD;
+The identifier of this block will be - "block_invoice_pdf".&#xD;
+&#xD;
+This block will contain the phrase: "Thank you for buying from us".&#xD;
+&#xD;
+After installing this extension, this phrase appears in all the invoice PDFs.</notes>
+    <authors><author><name>Yaroslav Medved</name><user>medvslav</user><email>medvslav@gmail.com</email></author></authors>
+    <date>2016-01-28</date>
+    <time>13:32:45</time>
+    <contents><target name="magelocal"><dir name="Medvslav"><dir name="Pdfinvoice"><dir name="Model"><dir name="Order"><dir name="PDF"><file name="Invoice.php" hash="0cbdba6cbcdbbe2aaa44137847bbc49f"/></dir></dir><dir name="Resource"><file name="Setup.php" hash="82801b9c7646bffb2025978aa08fc426"/></dir></dir><dir name="data"><dir name="medvslav_pdfinvoice_setup"><file name="data-install-1.0.0.php" hash="b13369a4c5951b1899f50742c25b5a20"/></dir></dir><dir name="etc"><file name="config.xml" hash="84a66cff41095218eceec6f545ce149a"/></dir><dir name="sql"><dir name="medvslav_pdfinvoice_setup"><file name="install-1.0.0.php" hash="8358b7ccfd3fd9b629b3174839648be5"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Medvslav_Pdfinvoice.xml" hash="64d46ae722ced4b804635692f5ffa072"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.30</min><max>5.5.9</max></php><package><name>Mage_Core_Modules</name><channel>Community</channel><min>1.8</min><max>1.9.2</max></package></required></dependencies>
+</package>

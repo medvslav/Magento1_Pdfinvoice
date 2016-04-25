@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Medvslav_Pdfinvoice extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Medvslav
+ * @package        Medvslav_Pdfinvoice
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Medvslav_Pdfinvoice>
+            <version>1.0.0</version>
+        </Medvslav_Pdfinvoice>
+    </modules>
+    <global>
+        <resources>
+            <medvslav_pdfinvoice_setup>
+                <setup>
+                    <module>Medvslav_Pdfinvoice</module>
+                    <class>Medvslav_Pdfinvoice_Model_Resource_Setup</class>
+                </setup>
+            </medvslav_pdfinvoice_setup>
+        </resources>
+        <models>     
+            <medvslav_pdfinvoice>
+                <class>Medvslav_Pdfinvoice_Model</class>
+                <resourceModel>medvslav_pdfinvoice_resource</resourceModel>
+            </medvslav_pdfinvoice>
+            <medvslav_pdfinvoice_resource>
+                <class>Medvslav_Pdfinvoice_Model_Resource</class>
+            </medvslav_pdfinvoice_resource>
+			<sales>                        
+				<rewrite>                               
+					<order_pdf_invoice>Medvslav_Pdfinvoice_Model_Order_PDF_Invoice</order_pdf_invoice>        
+				</rewrite>                       
+            </sales>   
+        </models>
+    </global>       
+</config>
