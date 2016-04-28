@@ -5,4 +5,3 @@ When you install this extension in the administrative part of the Magento will c
 The identifier of this block will be - "block_invoice_pdf".<br />
 This block will contain the phrase: "Thank you for buying from us".<br />
 After installing this extension, this phrase appears in all the invoice PDFs.<br />
-This is my module.
